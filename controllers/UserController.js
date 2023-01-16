@@ -22,4 +22,7 @@ UserController.getAll = async (req, res) => {
    }
 };
 
+
+//delete one
+
 export default UserController;
