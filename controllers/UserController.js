@@ -48,8 +48,8 @@ UserController.rentUserMovies = async (req, res) => {
    try {
      const user = await User.findById(req.params.userId);
      const movie = req.body;
-     // const match = user.movies.find((m) => m._id == movie._id);
-     const match = false;
+     const match = user.movies.find((m) => m._id == movie._id);
+  
      if (match) {
        res.json({
          message: "User already have this movie",
@@ -58,7 +58,7 @@ UserController.rentUserMovies = async (req, res) => {
      } else {
        const updatedUser = await User.updateOne(
          { _id: req.params.userId },
-         { $push: { movies: req.params.movieId } }
+         { $push: { movies: req.body } }
        );
        res.json({
          message: "User movies updated successfully",

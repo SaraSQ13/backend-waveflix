@@ -69,8 +69,9 @@ AuthController.login = async (req, res) => {
       success: true,
       message: `User Logged as ${user.role.toUpperCase()}`,
       token: token,
-      role: user.role,
-      id: user._id,
+      // role: user.role,
+      // id: user._id,
+      user:user,
     });
   } catch (error) {
     return res.status(500).json({
