@@ -1,3 +1,37 @@
+This API is built with Express and uses MongoDB as the database. It provides functionality for user authentication, movie listings, and movie rentals.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/): ^12.0.0
+
+
+<hr>
+
+### Installing
+
+Install packages npm:
+
+
+```
+npm install
+```
+## 🎈 Usage <a name="usage"></a>
+
+Start the dev server with this command:
+
+```
+npm run dev
+```
+
+Run http://localhost:3000/ in your borwser to do the tests.
+<br>
+
+Start the production server with this command:
+
+```
+npm start
+```
+
 # API Endpoints
 
 This API has the following endpoints:
