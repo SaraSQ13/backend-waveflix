@@ -15,7 +15,7 @@ This API has the following endpoints:
 ## Rented Movies Endpoints
 
 - **PATCH** `/users/:userId/rent`: This endpoint is used to update rented movies.
-- **POST** `/users/:userId/delete/:movieId`: This endpoint is used to delete a rented movie by id.
+- **PATCH** `/users/:userId/delete/:movieId`: This endpoint is used to delete a rented movie by id.
 
 
 ## User Endpoints
